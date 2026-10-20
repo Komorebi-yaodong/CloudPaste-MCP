@@ -35,7 +35,7 @@ FILE_MANAGE = 8
   "mcpServers": {
     "cloudpaste": {
       "command": "npx",
-      "args": ["-y", "cloudpaste-mcp-server"],
+      "args": ["-y", "cloudpaste-mcp-server@0.1.0"],
       "env": {
         "CLOUDPASTE_URL": "https://copy.example.com",
         "CLOUDPASTE_API_KEY": "your-dedicated-cloudpaste-api-key",

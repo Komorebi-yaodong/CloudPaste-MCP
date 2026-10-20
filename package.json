@@ -5,7 +5,7 @@
   "license": "Apache-2.0",
   "type": "module",
   "bin": {
-    "cloudpaste-mcp-server": "./dist/cli.js"
+    "cloudpaste-mcp-server": "dist/cli.js"
   },
   "files": [
     "dist",
