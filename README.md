@@ -37,7 +37,7 @@ FILE_MANAGE = 8
       "command": "npx",
       "args": ["-y", "cloudpaste-mcp-server@0.1.0"],
       "env": {
-        "CLOUDPASTE_URL": "https://copy.example.com",
+        "CLOUDPASTE_URL": "https://cloudpaste.example.com",
         "CLOUDPASTE_API_KEY": "your-dedicated-cloudpaste-api-key",
         "CLOUDPASTE_DEFAULT_PATH": "/CloudPaste/MCP",
         "CLOUDPASTE_STORAGE_CONFIG_ID": "",
@@ -116,7 +116,7 @@ pnpm build
 使用本地源码调试：
 
 ```powershell
-$env:CLOUDPASTE_URL = "https://copy.example.com"
+$env:CLOUDPASTE_URL = "https://cloudpaste.example.com"
 $env:CLOUDPASTE_API_KEY = "your-api-key"
 pnpm dev
 ```
