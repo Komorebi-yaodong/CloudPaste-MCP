@@ -54,13 +54,11 @@ FILE_MANAGE = 8
 
 | 名称 | 必填 | 默认值 | 说明 |
 | --- | --- | --- | --- |
-| `CLOUDPASTE_URL` | 是 | - | CloudPaste 根地址，只允许 `http(s)`。 |
-| `CLOUDPASTE_API_KEY` | 是 | - | 专用 API Key，最小权限为 10。 |
-| `CLOUDPASTE_DEFAULT_PATH` | 否 | 不设置 | 默认上传目录。 |
-| `CLOUDPASTE_STORAGE_CONFIG_ID` | 否 | CloudPaste 默认存储 | 默认目标存储配置 ID。 |
-| `CLOUDPASTE_DEFAULT_EXPIRES_HOURS` | 否 | `24` | 默认分享有效期，范围为 1–8760 小时。 |
-
-可复制 `.env.example` 作为本地参考，但不要提交真实 `.env` 文件。
+| `CLOUDPASTE_URL` | 是 | - | CloudPaste根地址，只允许 `http(s)` |
+| `CLOUDPASTE_API_KEY` | 是 | - | 专用API Key |
+| `CLOUDPASTE_DEFAULT_PATH` | 否 | 不设置 | 默认上传目录 |
+| `CLOUDPASTE_STORAGE_CONFIG_ID` | 否 | CloudPaste 默认存储 | 默认目标存储配置ID |
+| `CLOUDPASTE_DEFAULT_EXPIRES_HOURS` | 否 | `24` | 默认分享有效期，范围为1–8760小时（1小时~1年） |
 
 ## 工具说明
 
@@ -70,7 +68,7 @@ FILE_MANAGE = 8
 
 ```json
 {
-  "file_path": "E:\\TMP\\example.zip",
+  "file_path": "D:\\Download\\example.zip",
   "expires_in_hours": 24,
   "path": "/CloudPaste/MCP",
   "storage_config_id": "optional-storage-id",
@@ -106,7 +104,7 @@ expires_in=24（未显式覆盖时）
 ## 本地开发
 
 ```powershell
-Set-Location "E:\Programming\CloudPaste-MCP"
+Set-Location "D:\Programming\CloudPaste-MCP"
 pnpm install
 pnpm check
 pnpm test
